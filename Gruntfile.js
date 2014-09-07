@@ -10,14 +10,22 @@ module.exports = function(grunt) {
         }
       }
     },
+    less: {
+      development: {
+        files: {
+          'dist/ctextedit.css': 'src/less/main.less'
+        }
+      }
+    },
     watch: {
-      files: 'src/*coffee',
-      tasks: ['coffee']
+      files: ['src/*coffee', 'src/less/*.less'],
+      tasks: ['coffee', 'less']
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-coffee');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-less');
 
-  grunt.registerTask('default', ['coffee']);
+  grunt.registerTask('default', ['coffee', 'less']);
 }
