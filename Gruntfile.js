@@ -6,7 +6,7 @@ module.exports = function(grunt) {
           bare: true
         },
         files: {
-          'dist/ctextedit.js': 'src/*.coffee'
+          'dist/ctextedit.js': ['src/textedit.coffee', 'src/templates.coffee']
         }
       }
     },

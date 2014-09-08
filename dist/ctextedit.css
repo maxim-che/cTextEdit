@@ -1,3 +1,30 @@
 .c-text-editor {
-  border: 1px silver solid;
+  border: 1px #EDEDED solid;
+}
+.c-text-editor .toolbar {
+  background: #EDEDED;
+  height: 24px;
+}
+.c-text-editor .toolbar .left {
+  width: 50%;
+  float: left;
+}
+.c-text-editor .toolbar .right {
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+.c-text-editor .toolbar a {
+  text-decoration: none;
+  color: black;
+}
+.c-text-editor .toolbar .ctext-btn {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 3px;
+  text-align: center;
+}
+.c-text-editor .toolbar .ctext-btn:hover {
+  background: silver;
 }

@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
+    <link rel="stylesheet" href="dist/ctextedit.css" type="text/css" media="screen">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>    
     <script type="text/javascript" src="dist/ctextedit.js"></script>
   </head>
   <body>
+    <textarea rows="5" cols="80" class="example-textarea"></textarea>
     <script type="text/javascript">
-      var exampleText = new TextEdit('.example-textarea');
+      var exampleText = new window.CTextEdit({ 
+        selector: '.example-textarea'
+      });
     </script>
   </body>
 </html>
