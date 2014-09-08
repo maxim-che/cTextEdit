@@ -16,5 +16,6 @@ class window.CTextEdit
     @textArea.hide()
     $(@templates.mainContainer).insertAfter @textArea
     $('.c-text-editor').width @width
-    $('.c-text-editor').height @height
+    $('.c-text-editor').height @height 
+    $('.editor').height @height - $('.c-text-editor > .toolbar').height() 
     

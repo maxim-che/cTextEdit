@@ -1,6 +1,9 @@
 .c-text-editor {
   border: 1px #EDEDED solid;
 }
+.c-text-editor .editor {
+  overflow: auto;
+}
 .c-text-editor .toolbar {
   background: #EDEDED;
   height: 24px;

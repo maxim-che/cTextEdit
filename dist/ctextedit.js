@@ -19,7 +19,8 @@ window.CTextEdit = (function() {
     this.textArea.hide();
     $(this.templates.mainContainer).insertAfter(this.textArea);
     $('.c-text-editor').width(this.width);
-    return $('.c-text-editor').height(this.height);
+    $('.c-text-editor').height(this.height);
+    return $('.editor').height(this.height - $('.c-text-editor > .toolbar').height());
   };
 
   return CTextEdit;
