@@ -4,13 +4,7 @@ class window.CTextEdit.Templates
     @toolBar = """
                 <div class="toolbar">
                   <div class="left">
-                    <a href="#" class="select-font-btn ctext-btn">
-                      <i class="fa fa-font"></i>
-                    </a>
-                     <a href="#" class="select-color-btn ctext-btn">
-                      <i class="fa fa-tint"></i>
-                    </a>
-                      <a href="#" class="select-italic-btn ctext-btn">
+                     <a href="#" class="select-italic-btn ctext-btn">
                       <i class="fa fa-italic"></i>
                     </a>
                        <a href="#" class="select-bold-btn ctext-btn">
@@ -18,6 +12,9 @@ class window.CTextEdit.Templates
                     </a>
                </div>
                   <div class="right">
+                     <a href="#" class="select-color-btn ctext-btn">
+                      <i class="fa fa-tint"></i>
+                    </a>
                     <a href="#" class="select-smile-btn ctext-btn">
                       <i class="fa fa-smile-o"></i>
                     </a>
